@@ -1,0 +1,181 @@
+
+    
+ *{
+    box-sizing: border-box;
+     } 
+     /* Set default font size, line height, and font family */
+      body {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: Verdana, sans-serif;
+        margin: 0;                      /* Remove default margin */
+      }
+    
+      h1, h2, h3 {  /* Optional: You can also add some additional styling for better readability */
+        margin: 0;
+        padding: 0;
+      }
+    
+      header, nav ul, #content-wrapper {  /* Grouped selector to apply the same styles to <header>, <ul> in navigation, and #content-wrapper */
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;                 /* Auto-margins to center the design */
+      }
+    
+      a {
+        color: #008000;
+      }
+    
+      #logo {                     /* Position the logo absolutely at the top-left corner */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      header {                   /* Set the <header> element to be relatively positioned */
+        position: relative;
+      }
+      
+  
+      header h1, nav ul {            /* Grouped selector to target <h1> inside <header> and <ul> in the navbar */
+        padding-left: 50px;
+      }
+    
+      nav {                                    /* Set the background color of the <nav> element */
+        background-color: #008000;
+      }
+    
+      nav ul {                            /* Remove the item markers (bullet points) from the unordered list */  
+        list-style-type: none;
+        padding: 0;                       /* Optional: removes the default padding */
+      }
+  
+      nav ul li {                     /* Set the list items to display as inline-block */
+        display: inline-block;
+      }
+    
+      nav ul li a {
+        display: inline-block;        /* Make the anchor an inline-block */
+        padding: 1rem;                 /* Add padding of 1rem */
+        text-decoration: none;         /* Remove the underline */
+        color: white;                  /* Set the text color to white */
+        font-weight: bold;             /* Make the text bold */
+      }
+  
+      nav ul li a:hover {
+        background-color: black;        /* Set background color to black on hover */
+        color: #9ae39a;                 /* Set text color to #9ae39a on hover */
+      }
+  
+  
+      main article img {
+        border: double 3px #333;      /* Apply a double border, 3px wide, with color #333 */
+        float: left;                     /* Float the image to the left */
+        margin-top: 0.5rem;               /* Set top margin to 0.5rem */
+        margin-right: 1rem;             /* Set right margin to 1rem */
+        margin-bottom: 0.5rem;           /* Set bottom margin to 0.5rem */ 
+      }
+  
+  
+      section {
+        display: flex;
+        justify-content: space-between;   /* Add space between the columns */
+      }
+      
+      section div {
+        flex: 1;                         /* Make each <div> take equal space */
+        margin: 0 1rem;                  /* Optional: Add space between the columns */
+      }
+  
+      main section {
+        display: flex;
+        justify-content: space-between; /* Space out the columns evenly */
+        gap: 1rem;                      /* Optional: Add space between the flex items (columns) */
+      }
+  
+  
+      main section div {
+        background-color: #e7ffe7;        /* Set the background color to light green */
+        border: 1px solid #008000;        /* Set a solid 1px green border */
+        border-radius: 10px;                /* Round the corners with a border radius of 10px */
+        flex: 1;                            /* Make each <div> take equal, proportional width */
+        margin-right: 1rem;                  /* Add a right margin of 1rem */
+        display: flex;                      /* Use flexbox to align the content */
+        flex-direction: column;             /* Stack the content vertically */
+        justify-content: center;             /* Vertically center the content */
+        align-items: center;                  /* Horizontally center the content */
+        padding: 1rem;                        /* Add padding inside the <div> */
+      }
+  
+      main section div:last-child {
+        margin-right: 0;                 /* Remove the right margin from the last <div> */
+      }
+  
+  
+      main section div h2 {
+        background-color: #008000;        /* Set the background color to green */
+        border-top-left-radius: 10px;        /* Set the top-left corner border radius to 10px */
+        border-top-right-radius: 10px;       /* Set the top-right corner border radius to 10px */
+        border-bottom-left-radius: 0;         /* Set the bottom-left corner border radius to 0 */
+        border-bottom-right-radius: 0;       /* Set the bottom-right corner border radius to 0 */
+        color: white;                        /* Set the text color to white */
+        margin-top: 0;                         /* Remove the top margin */
+        padding: 0.5rem;                     /* Optional: Add some padding inside the <h2> for spacing */
+      }
+  
+      main section div img {
+        border: double 3px #333;        /* Set a double border of 3px and color it #333 */
+        display: block;                   /* Make the image a block element */
+        margin-left: auto;                /* Automatically add left margin to center the image */
+        margin-right: auto;               /* Automatically add right margin to center the image */
+        padding: 0.5rem;                   /* Optional: Add padding around the image */
+      }
+  
+  
+      aside section {
+        background-color: white;        /* Set the background color to white */
+        margin-bottom: 1rem;              /* Add a bottom margin of 1rem */
+        border: 1px solid #008000;      /* Set a solid 1px green border */
+      }
+  
+  
+      aside h3 {
+        background-color: #008000;  /* Set the background color to green */
+        color: white;               /* Set the text color to white */
+        padding: 0.5rem;              /* Add padding of 0.5rem around the <h3> */
+        margin: 0;                    /* Remove any default margin */
+      }
+  
+  
+      aside a {
+        display: inline-block;        /* Display the anchor as an inline-block */
+        padding: 0.5rem;              /* Add padding of 0.5rem around the anchor */
+      }
+  
+      #content-wrapper {
+        display: flex;              /* Apply flexbox to the container */
+        flex-direction: column;     /* Optional: Stack child elements vertically */
+      }
+  
+      #content-wrapper aside {
+        background-color: #ccc;        /* Set the background color to light gray */
+        margin-right: 1rem;              /* Add a right margin of 1rem */
+        padding: 0.5rem;                 /* Add padding of 0.5rem */
+        position: relative;              /* Set the position to relative */
+        top: 20px;                       /* Move the <aside> 20px from the top */
+        order: -1;                       /* Set the order so it displays on the left side */
+        flex: 1;                          /* Set the width of the <aside> to be proportional to 1 */
+      }
+  
+      #content-wrapper aside h2 {
+        margin-top: 0;               /* Remove the top margin */
+        white-space: nowrap;         /* Prevent the text from wrapping */
+      }
+  
+  
+    #content-wrapper main {
+      order: 1;                  /* Set the order so it displays on the right side */
+      flex: 4;                  /* Make <main> four times as wide as the sidebar */
+  }
+  
+  
