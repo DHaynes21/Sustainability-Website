@@ -1,0 +1,116 @@
+/* Derreck Haynes */
+/* 3/7/2025*/
+
+
+ *{
+  box-sizing: border-box;
+   } 
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: Verdana, sans-serif;
+      margin: 0; 
+    }
+  
+    h1, h2, h3 {
+      margin: 0;
+      padding: 0;
+    }
+  
+    header, nav ul, #content-wrapper {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0;
+    }
+  
+    a {
+      color: #008000;
+    }
+  
+    #logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    header {
+      position: relative;
+    }
+    
+
+    header h1, nav ul {
+      padding-left: 50px;
+    }
+  
+    nav {
+      background-color: #008000;
+    }
+  
+   
+    nav ul li {
+      display: inline-block;
+    }
+  
+    nav ul li a {
+      display: inline-block;      
+      padding: 1rem;              
+      color: white;               
+      font-weight: bold;          
+    }
+
+    nav ul li a:hover {
+      background-color: black;   
+      color: #9ae39a;           
+    }
+
+
+    main article img {
+      border: double 3px #333;      
+      float: left;                  
+      margin-top: 0.5rem;           
+      margin-right: 1rem;          
+      margin-bottom: 0.5rem;        
+    }
+
+
+    section {
+      display: flex;
+      justify-content: space-between; 
+    }
+    
+    section div {
+      flex: 1; 
+      margin: 0 1rem; 
+    }
+
+    main section {
+      display: flex;
+      justify-content: space-between; 
+      gap: 1rem; 
+    }
+
+
+    main section div {
+      background-color: #e7ffe7;        
+      border: 1px solid #008000;       
+      border-radius: 10px;            
+      flex: 1;                         
+      margin-right: 1rem;              
+      display: flex;                   
+      flex-direction: column;          
+      justify-content: center;         
+      align-items: center;             
+      padding: 1rem;                   
+    }
+
+    main section div:last-child {
+      margin-right: 0;                 
+    }
+
+
+   
+
+
+
+   
+
